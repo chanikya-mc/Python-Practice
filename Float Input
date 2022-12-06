@@ -1,0 +1,15 @@
+Float Input
+
+Write a program to get float as input and print it. When the user enters a float, it is stored in the variable test Float. with 2 precisions. NOTE: Bold letters or words are Input and the rest are output statements.
+
+Sample Input :
+
+56.2425
+
+Sample Output :
+
+56.24
+
+coding:
+x=float(input())
+print("%.2f"%(x))
