@@ -1,0 +1,40 @@
+Lab Allocation
+
+There are 3 labs in the CSE department (L1, L2 and L3) with a seating capacity of x, y and z. find the lab which has the minimal seating capacity. 
+
+Input and Output Format:
+
+Assume that x, y and z are always distinct.
+
+Refer sample input and output. 
+
+Note:
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output 1:
+
+Enter x
+
+30
+
+Enter y
+
+40
+
+Enter z
+
+20
+
+L3 has the minimal seating capacity
+
+coding:
+l1=int(input("Enter lab 1 capacity:"))
+l2=int(input("Enter lab 2 capacity:"))
+l3=int(input("Enter lab 3 capacity:"))
+if l1>l2 and l1>l3:
+    print("Lab 1 have more capacity")
+elif l2>l1 and l2>l3:
+    print("Lab 2 have more capacity")
+else:
+    print("Lab 3 have more capacity")
