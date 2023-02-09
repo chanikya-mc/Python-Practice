@@ -1,0 +1,15 @@
+differance between sum of even place digit and sum of odd place digit 
+codinng:
+
+x=int(input())
+sum=0
+dif=0
+y=list(map(int,str(x)))
+for i in range(len(y)):
+    if i%2==0:
+        sum=sum+int(y[i])
+    else:
+        dif=dif+int(y[i])
+print(sum-dif)
+    
+    
