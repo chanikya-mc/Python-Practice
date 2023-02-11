@@ -1,0 +1,38 @@
+Strong Number
+
+Program to check if a given number is a strong number or not is discussed here. A strong number is a number in which the sum of the factorial of the digits is equal to the number itself.
+
+Input & Output Format:
+Input consists of one integer.
+
+Output consists of a string. 
+
+If it is true then display "Strong Number" else display "Not a Strong Number".
+
+Sample Input & Output:
+
+145
+
+Strong Number
+
+coding:
+my_sum=0
+my_num =int(input())
+
+
+temp = my_num
+while(my_num):
+   i=1
+   fact=1
+   remainder = my_num%10
+   while(i<=remainder):
+      fact=fact*i
+      i=i+1
+   my_sum = my_sum+fact
+   my_num=my_num//10
+if(my_sum == temp):
+   print("strong number")
+else:
+   print(" not a strong number")
+
+
