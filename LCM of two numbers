@@ -1,0 +1,40 @@
+LCM of two numbers
+
+Write a program to find LCM of two numbers is discussed here. Two numbers are obtained as input and the prime factors of both the numbers are found. The product of the union of prime factors of both the numbers gives the LCM of the two numbers.
+
+Input & Output Format:
+
+Input consists of two integers.
+
+Output consists of the lcm of two numbers.
+
+Sample Input:
+
+5
+
+30
+
+Sample Output:
+
+LCM of 5 and 30 is 30
+
+coding:
+def mc(x, y):
+
+   # choose the greater number
+   if x > y:
+       greater = x
+   else:
+       greater = y
+
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater
+           break
+       greater += 1
+
+   return lcm
+
+x=int(input())
+y=int(input())
+print(mc(x,y))
