@@ -1,0 +1,20 @@
+decoding the message either forward or backword
+
+n = int(input())
+d = input()
+m = input()
+l=""
+i=0
+while i<len(m):
+    if d=="<":
+        if m[i]==" ":
+            l=l+" "
+        x=ord(m[i])-1
+        l=l+chr(x)
+    elif d==">":
+        if m[i]==" ":
+            l=l+" "
+        y=ord(m[i])+1
+        l=l+chr(y)
+    i=i+1
+print(l)
