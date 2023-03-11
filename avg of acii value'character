@@ -1,0 +1,14 @@
+find avarage ASCII value of a string and return the character of the corresponding value
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+l = int(input())
+s = input()
+avg=0
+for i in s:
+    avg+=ord(i)
+print(chr(avg//l))
