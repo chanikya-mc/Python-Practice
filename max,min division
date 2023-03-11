@@ -1,0 +1,22 @@
+Find the maximum and the minimum of a list of positive numbers and return the integer division of the maximum divided by the minimum.
+Input
+Line 1 : N numbers separated by a space.
+Output
+The floor of the maximum divided by the minimum of the given numbers.
+Constraints
+Each number is different from 0
+Example
+Input
+5 1 3 4 8
+Output
+8
+coding:
+import sys
+import math
+
+l=[]
+n= input().split()
+for i in n:
+    l.append(i)
+l.sort()
+print(math.floor(int(l[len(l)-1]) / int(l[0])))
