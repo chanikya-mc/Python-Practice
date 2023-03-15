@@ -1,0 +1,70 @@
+Find these secure passwords using the 'Caesar' shift encryption method.
+
+Notes :
+
+• The given array of integers represents the shift(s) that have been applied to the original string.
+
+• Apply the 1st shift to the first character, the 2nd shift to the second character, etc.
+
+• Cycle through the array of shifts repeatedly. That is, when the end of the array is reached, go back to the beginning.
+
+• If a shift is positive, encoding a character with that shift means moving forward in the alphabet. Negative means moving backward.
+
+• Your job is to decode. That means the direction will be reverse of the above.
+
+• Only the 26 alphabet letters are considered. If you reach the beginning/end of the alphabet while shifting, wrap around and go to the other end to continue.
+
+
+
+Example : If argument is equal to 2 1 "CSIVOFPU"
+
+C - 2 = A
+S - 1 = R
+I - 2 = G
+V - 1 = U
+O - 2 = M
+F - 1 = E
+P - 2 = N
+U - 1 = T
+Input
+Line 1: A string P (string) that represents the encoded password to be found.
+
+Line 2: nbArgument (int) represents the number of arguments allowing the decoding.
+
+Line 3:
+
+- inputs is an array of integers. (integers are space-separated)
+- The value of each arguments is designated in the variable argument
+Output
+The password decoded to a string.
+Constraints
+Example
+Input
+FVBKQJF
+2
+-1 2
+Output
+EXAMPLE
+
+coding:import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+alphabet = list(chr(i) for i in range(ord('a'), ord('z')+1)) + list(chr(i) for i in range(ord('A'), ord('Z')+1)) + list(chr(i) for i in range(ord('0'), ord('9')+1))
+
+p = input()
+nb_argument = int(input())
+keys = []
+for i in input().split():
+    keys.append(int(i))
+
+def decode(p, keys):
+    rep = ""
+    for i,c in enumerate(p):
+        key = keys[i%len(keys)]
+        rep += alphabet[(alphabet.index(c) + key) % len(alphabet)]
+    return rep
+
+print(decode(p, keys))
