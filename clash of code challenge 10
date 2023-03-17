@@ -1,0 +1,94 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01 Test 1
+Input
+Expected output
+5
+1 2 3 4 5
+[x] 1
+[ ] 2
+[x] 3
+[ ] 4
+[x] 5
+02 Test 2
+Input
+Expected output
+22
+2 3 4 9 11 12 19 20 23 36 41 56 58 59 67 72 74 89 90 92 94 99
+[ ] 2
+[x] 3
+[ ] 4
+[x] 9
+[x] 11
+[ ] 12
+[x] 19
+[ ] 20
+[x] 23
+[ ] 36
+[x] 41
+[ ] 56
+[ ] 58
+[x] 59
+[x] 67
+[ ] 72
+[ ] 74
+[x] 89
+[ ] 90
+[ ] 92
+[ ] 94
+[x] 99
+03 Test 3
+Input
+Expected output
+20
+-68 4 91 37 22 15 -34 -71 29 0 -42 6 -50 -39 46 -1 -29 74 73 -95
+[ ] -68
+[ ] 4
+[x] 91
+[x] 37
+[ ] 22
+[x] 15
+[ ] -34
+[x] -71
+[x] 29
+[ ] 0
+[ ] -42
+[ ] 6
+[ ] -50
+[x] -39
+[ ] 46
+[x] -1
+[x] -29
+[ ] 74
+[x] 73
+[x] -95
+04 Test 4
+Input
+Expected output
+7
+-71 16 67 32 28 -49 53
+[x] -71
+[ ] 16
+[x] 67
+[ ] 32
+[ ] 28
+[x] -49
+[x] 53
+
+
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+count = int(input())
+for i in input().split():
+    n = int(i)
+    if n%2==0:
+        print("[ ]",n)
+    else:
+        print("[x]",n)
+
+
