@@ -1,0 +1,30 @@
+A lucky number is a 10-based number, which has at least a 6 or an 8 in its digits. However, if it has 6 and 8 at the same time, then the number is NOT lucky. For example, 16 , 38, 666 are lucky numbers, while 234 , 687 are not.
+
+Output Lucky if number is a lucky number or else output Not Lucky
+Input
+A number
+Output
+Lucky or Not Lucky
+Constraints
+0 < number < 1 000 000
+Example
+Input
+16
+Output
+Lucky
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n= int(input())
+m=str(n)
+if m.__contains__("6") or m.__contains__("8"):
+    print("Lucky")
+elif m.__contains__("6") and m.__contains__("8"):
+    print("Not Lucky")
+else:
+    print("Not Lucky")
