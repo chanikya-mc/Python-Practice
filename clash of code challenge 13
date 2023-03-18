@@ -1,0 +1,35 @@
+Given the year, print the number of days in February in the year. In addition, print the type of year. The type of year is determined using the following rule:
+
+*If the year value is divisible by 400, its type is L.
+*If the year value isn't divisible by 400 but is divisible by 100, its type is H.
+*If the year value isn't divisible by 100 but is divisible by 4, its type is F.
+*If the year value isn't divisible by 4, its type is N.
+Input
+Line 1: One line that has one integer, year.
+Output
+Line 1: The number of days in February in year and the type of the year as described in the in Statement. Separate the two values by space.
+Constraints
+0 < year < 10000
+Example
+Input
+3003
+Output
+28 N
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+y = int(input())
+if y%400==0:
+    print(29,"L")
+elif  y%100==0 and y%400!=0:
+    print(28,"H")
+elif  y%100!=0 and y%4==0:
+    print(29,"F")
+elif y%4!=0:
+    print(28,"N")
+
