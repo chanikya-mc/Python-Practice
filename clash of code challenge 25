@@ -1,0 +1,15 @@
+re=""
+i = input()
+s=""
+d=""
+for j in i:
+    if j.isalpha():
+        s=s+j
+    elif j.isdigit():
+        d=d+j
+    else:
+        s=s+j
+for i in s:
+    for k in range(len(d)):
+        re=re+i*(int(d[k])//2)
+print(re*2)
