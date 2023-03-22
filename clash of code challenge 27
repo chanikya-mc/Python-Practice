@@ -1,0 +1,43 @@
+You are given three strings chars, s, toGet.
+The chars variable has a set of characters. The s variable is a given phrase. The toGet variable has a given character(s). The goal is to output the character in s found at the same index of toGet in chars.
+
+For example:
+Let's say the chars variable is "abcdef",
+the s is "bed"
+and you have toGet the character at index "a".
+Then, "a" is the first letter on "abcdef", so the "a" index of "bed" is "b".
+
+Important: There could be more than a character to get, in that case, print each char of each index.
+Input
+Line 1 : A set of characters chars with all character indexes.
+Line 2 : A string s to get character(s).
+Line 3: A character(s) toGet that is the index(es) of the string to get.
+Output
+Line 1 : The characters at the index of toGet in s with the character indexes of chars.
+Constraints
+length of toGet ≤ length of s ≤ length of chars
+Also, there is no same character in chars
+Example
+Input
+abcdefghijklmnopq
+Hello, World!
+a
+Output
+H
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+c= input()
+s = input()
+t= input()
+q=""
+for i in range(len(t)):
+    n=c.index(t[i])
+    q=q+s[n]
+print(q)
+    
