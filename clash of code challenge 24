@@ -1,0 +1,41 @@
+You are in a Mathematics class. The teacher has just taught you how to add, multiply and square. Now, the teacher gives you x numbers n (x is odd) and asks you to find the product of the sum of odd numbers and the sum of even numbers. Furthermore, he wants you to add the square of the middle number to the result. To prevent cheating, he wants you to show your steps in this format:
+Sum(even) x Sum(odd) + middle^2 = result
+
+P.S. Please look at the output format.
+Input
+Line 1: an integer x, the size of the numbers list.
+Line 2: x space-separated integers n.
+Output
+The steps in one line following the required format.
+Constraints
+x is odd
+-100 < n < 100
+Example
+Input
+9
+0 1 2 3 4 5 6 7 8
+Output
+20 x 16 + 4^2 = 336
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+l=[]
+even=0
+odd=0
+x = int(input())
+for i in input().split():
+    n = int(i)
+    l.append(n)
+for i in range(len(l)):
+    if l[i]%2==0:
+        even=even+l[i]
+    else:
+        odd=odd+l[i]
+ans=even*odd+l[len(l)//2]**2
+print("%d x %d + %d^2 = %d"%(even,odd,l[len(l)//2],ans))
+
+
