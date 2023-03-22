@@ -1,0 +1,47 @@
+Given an nxn chessboard, output its equivalent in FEN notation.
+A FEN String identifies uniquely a chess position
+Fen notation reads the board in order and writes in a string:
+Ex.
+--b-
+k---
+---r
+p---
+Becomes: "2b1/k3/3r/p3"
+the numbers indicate the number of consecutive empty spaces and the "/" indicate the end of the row.
+Input
+An integer n: The size of the chessboard
+The next n lines: a string of length n
+Output
+The corresponding FEN string
+Constraints
+0<n<30
+Example
+Input
+4
+--b-
+k---
+---r
+p---
+Output
+2b1/k3/3r/p3
+
+coding:
+n = int(input())
+s=""
+for i in range(n):
+    row = input()
+    k=""
+    for i in row:
+        if i.isalpha():
+            k+=i
+    if k == "":
+        s+=str(len(row))+'/'
+    else:
+        res=row.split(k[0])
+        if len(res[0]) != 0:
+            s+=str(len(res[0]))
+        s+=k
+        if len(res[len(res)-1]) != 0:
+            s+=str(len(res[len(res)-1]))
+        s+='/'
+print(s[:-1])
