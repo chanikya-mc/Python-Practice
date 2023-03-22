@@ -1,0 +1,39 @@
+For each line of three numbers, you have to find the number with the middle value. For example:
+
+Triplet → Output
+1 5 6 → 5
+8 4 6 → 6
+3 1 3 → 3
+2 9 2 → 2
+6 6 6 → 6
+Input
+Line 1: An integer N.
+Next N lines: Three numbers X, Y and Z separated by a space.
+Output
+For each line of the N lines: the middle value from X, Y and Z.
+Constraints
+1 ≤ N ≤ 20
+-65535 ≤ X,Y,Z ≤ 65535
+Example
+Input
+5
+1 2 3
+5 3 8
+9 1 7
+4 2 4
+6 6 6
+Output
+2
+5
+7
+4
+6
+
+coding:
+n=int(input())
+for i in range(n):
+    x=[int(j) for j in input().split()]
+    x.sort()
+    print(x[len(x)//2])
+
+
