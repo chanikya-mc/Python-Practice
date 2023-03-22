@@ -1,0 +1,28 @@
+Input
+Line 1: an integer N number of odds to sum up
+Output
+Line 1: sum of the first N odds
+Constraints
+0 < N < 1000
+Example
+Input
+1
+Output
+1
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+s=0
+n = int(input())
+c=1
+x=1
+while c<=n:
+    
+    s=s+x
+    x=x+2
+    c=c+1
+print(s)
