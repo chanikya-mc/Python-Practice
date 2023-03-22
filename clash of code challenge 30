@@ -1,0 +1,34 @@
+You are given a list of n students' names that are in the current classroom
+and s the list of all the students that belong to that classroom and are expected to be present.
+
+You need to output the students who are absent, which are not in the classroom. If no one is absent output none.
+Input
+Line 1: n a list of students that are in the current classroom separated by a space.
+Line 2: s the list of all the students that belong to that classroom separated by a space.
+Output
+Print 1 Line denoting the students who are not in the classroom separated by space
+or
+none if all students are in the classroom.
+Constraints
+1 <= length n <= length s <= 256
+
+The names in n will always be in s. In other words, n ⊆ s.
+
+All names in n are distinct
+
+All names in s are distinct.
+Example
+Input
+john mike jotaro
+john dio mike jotaro wang
+Output
+dio wang
+
+coding:
+n = input().split();s = input().split();x=""
+for i in s:
+    if i not in  n:
+        x=x+i+" "
+    
+print(x.strip())
+
