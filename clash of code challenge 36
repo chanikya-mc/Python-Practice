@@ -1,0 +1,21 @@
+By removing the 0 to 405, we get 45, which is equal to 405/9.
+We are interested in strictly positive integers, n, less than or equal to N, which, when we remove all their zeros, give n / 9
+Input
+Line 1: An integer N for the limit number.
+Output
+Line 1: The bigest integer fulfilling this condition between 0 and N (if there is none, display "none")
+Constraints
+N ≤ 100000
+Example
+Input
+500
+Output
+405
+
+coding:
+for i in range(int(input()),0,-1):
+    a=int(str(i).replace("0",""))
+    if a==i/9:
+        print(i)
+        exit()
+print("none")
