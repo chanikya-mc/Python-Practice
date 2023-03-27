@@ -1,0 +1,17 @@
+class mobile:
+    def __init__(self,brand,battery,ram,price):
+        self.brand=brand
+        self.battery=battery
+        self.ram=ram
+        self.price=price
+    def display(self):
+        print("mobile brand :",self.brand)
+        print("mobile battery :",self.battery)
+        print("mobile ram :",self.ram)
+        print("mobile price :",self.price)
+        print("************************")
+
+obj=mobile("Redme","5010MH","8GB","18000")
+obj.display()
+obj=mobile("poco","7000MH","4GB","10000")
+obj.display()
