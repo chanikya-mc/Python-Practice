@@ -1,0 +1,6 @@
+class own:
+    def __init__(self):
+        print("this is self block")
+    def display(self):
+        print("This is display block")
+o=own()
