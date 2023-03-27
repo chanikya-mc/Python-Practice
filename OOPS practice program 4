@@ -1,0 +1,9 @@
+class Mc:
+    x=1000
+    def display(self):
+        a=20
+        b=30
+        print(a+b)        
+ob=Mc()
+ob.display()
+print(ob.x)
