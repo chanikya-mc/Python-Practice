@@ -1,0 +1,2 @@
+class Mc:
+    print("this this my first oops practice program")
