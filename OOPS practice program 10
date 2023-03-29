@@ -1,0 +1,11 @@
+#single level inheritence
+
+class parant:
+    def fun1(self):
+        print("this is parant class ")
+class child(parant):
+    def fun2(self):
+        print("this is child class")
+obj=child()
+obj.fun2()
+obj.fun1()
