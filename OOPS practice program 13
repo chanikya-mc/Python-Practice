@@ -1,0 +1,18 @@
+#multi level inheritence
+class gf:
+    def fun1(self):
+        print("this is  grand parant class ")
+class c1(gf):
+    def fun2(self):
+        print("this is child 1 class")
+class c2(gf):
+    def fun3(self):
+        print("this is child 2 class")
+obj1=c1()
+obj2=c2()
+
+obj1.fun2()
+obj1.fun1()
+
+obj2.fun1()
+obj2.fun3()
