@@ -1,0 +1,12 @@
+#super key word
+class A:
+    def __init__(self):
+        print("this is belongs to class A")
+        
+class B(A):
+    def __init__(self):
+        print("this is belongs to class B")
+        super().__init__()
+o=B()
+  
+
