@@ -1,0 +1,14 @@
+#multiple level inheritence
+class mother():
+    def fun1(self):
+        print("this is mother class ")
+class father():
+    def fun2(self):
+        print("this is father class")
+class child(mother,father):
+    def fun3(self):
+        print("this is child  class")
+obj1=child()
+obj1.fun1()
+obj1.fun2()
+obj1.fun3()
