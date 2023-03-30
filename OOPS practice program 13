@@ -1,4 +1,4 @@
-#multi level inheritence
+#HiraricalL  inheritence
 class gf:
     def fun1(self):
         print("this is  grand parant class ")
