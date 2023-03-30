@@ -1,0 +1,10 @@
+n=int(input())
+for i in range(n):
+    s=0
+    for j in input().split():
+        x=int(j)
+        if x%n==0:
+            s=s+x
+    print(s)
+    
+
