@@ -1,0 +1,25 @@
+Output a number multiplied by an order of magnitude given as English text.
+Input
+One line, a float num, followed by a space, followed by the text orderOfMagnitude
+Output
+One line, num times orderOfMagnitude
+Constraints
+0.000 ≤ num ≤ 100.000
+orderOfMagnitude can only be one of the following: "hundred", "thousand", "million"
+The result will always be an integer
+Example
+Input
+3.2 thousand
+Output
+3200
+
+coding:
+t = input().split()
+if t[1]=="thousand":
+    print(int(float(t[0])*1000))
+elif t[1]=="hundred":
+    x=float(t[0])*100
+    print(int(x))
+elif t[1]=="million":
+    x=float(t[0])*1000000
+    print(int(x))
