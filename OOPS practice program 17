@@ -1,0 +1,11 @@
+#Method overriding,same function name differnt class
+class A:
+    def display(self):
+        print("this is class A")
+class B(A):
+    
+    def display(self):
+        super().display()
+        print("this is class B")
+o=B()
+o.display()
