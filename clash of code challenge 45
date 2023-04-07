@@ -1,0 +1,27 @@
+Given two numbers, A and B, return the number of squares between A and B inclusive.
+
+Between A = 1 and B = 9 inclusive are 3 squares: 1, 4, and 9
+Between A = 10 and B = 25 inclusive are 2 squares: 16 and 25
+Between A = 26 and B = 35 inclusive are 0 squares
+Input
+Line 1 : the integer A.
+Line 2 : the integer B.
+Output
+Line 1 : the count of squares between and including A and B or 0 if none are present
+Constraints
+1 <= A <= B <= 10000000
+Example
+Input
+1
+9
+Output
+3
+
+import math
+def CountSquares(a, b):
+    return (math.floor(math.sqrt(b)) - math.ceil(math.sqrt(a)) + 1)
+ 
+# Driver Code
+a = int(input())
+b = int(input())
+print (int(CountSquares(a, b)))
