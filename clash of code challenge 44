@@ -1,0 +1,28 @@
+Travelling through the woods one day you come across a quirky cabin in the forest. Inside is the magician Merlin with his set of magical 3-sided dice. Each side has a different color on it (red, blue, and green).
+
+He hands you n unique and identical dice and says: "If you roll all of these dice one-after-the-other and exactly r of them are red, b of them are blue, and g of them are green, I will grant you one wish of your choice."
+
+How many ways can you successfully roll these dice?
+Input
+Line 1: An integer n representing the number of dice.
+Line 2: Three space-separated integers r, b, and g, representing the number of red, blue, and green dice you need to roll (respectively).
+Output
+Line 1: An integer representing the number of ways you can successfully roll the dice.
+Constraints
+2 ≤ n ≤ 12
+0 ≤ r,b,g ≤ 12
+Example
+Input
+6
+1 2 3
+Output
+60
+
+coding:
+n = int(input())
+r, b, g = [int(i) for i in input().split()]
+
+# Write an answer using print
+# To debug: print("Debug messages...", file=sys.stderr, flush=True)
+
+print(math.comb(n, r)*math.comb(n-r, b))
