@@ -1,0 +1,34 @@
+You are given a base, N, and a solution, Y. You must find the exponent needed to get from the base to the solution (such that N ^ X = Y) and print it.
+Input
+Line 1: An integer, N, for the base
+Line 2: An integer, Y, for the solution
+Output
+Line 1: An integer for the exponent needed to get from N to Y
+Constraints
+N > 0
+Y > 0
+Example
+Input
+2
+4
+Output
+2
+Console output
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n = int(input())
+y = int(input())
+
+if y>n:
+    for i in range(10):
+        if n**i==y:
+            print(i)
+else:
+    print(0)
+
