@@ -1,0 +1,23 @@
+Your program must perform a binary AND on two binary numbers given through the standard input and print the result to the standard output.
+
+Warning, the number of binary digits must remain the same.
+Input
+2 binary numbers n1 and n2, each on a separate line.
+Output
+The result of an AND between n1 and n2.
+Constraints
+n1 and n2 have the same number of digits.
+Example
+Input
+001
+011
+Output
+001
+Console output
+
+coding:
+n = input()
+m=input()
+z=int(n) & int(m)
+
+print(bin(z).replace("b","0"))
