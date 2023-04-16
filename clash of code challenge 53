@@ -1,0 +1,38 @@
+Given two integers a and b :
+- Concatenate their difference, product and sum,
+- Then convert the result into an integer
+Input
+Two lines : the integers a and b
+Output
+The concatenation of a-b, a*b and a+b, expressed as an integer (remove leading zeroes)
+Constraints
+0 <= a, b < 2^31
+Example
+Input
+5
+3
+Output
+2158
+
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+a = int(input())
+b = int(input())
+x=a-b
+y=a*b
+z=a+b
+if a-b==0:
+    print("0")
+else:
+
+    c=str(x)+str(y)+str(z)
+
+    print(c)
+
+
