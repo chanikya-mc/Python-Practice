@@ -1,0 +1,123 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01 Test 1
+Input
+Expected output
+3
+if n == 1:
+    print("n is 1")
+elif n == 2:
+    print("n is 2")
+elif n == 3:
+    print("n is 3")
+else:
+    print("number not found :(")
+02 Test 2
+Input
+Expected output
+1
+if n == 1:
+    print("n is 1")
+else:
+    print("number not found :(")
+03 Test 3
+Input
+Expected output
+12
+if n == 1:
+    print("n is 1")
+elif n == 2:
+    print("n is 2")
+elif n == 3:
+    print("n is 3")
+elif n == 4:
+    print("n is 4")
+elif n == 5:
+    print("n is 5")
+elif n == 6:
+    print("n is 6")
+elif n == 7:
+    print("n is 7")
+elif n == 8:
+    print("n is 8")
+elif n == 9:
+    print("n is 9")
+elif n == 10:
+    print("n is 10")
+elif n == 11:
+    print("n is 11")
+elif n == 12:
+    print("n is 12")
+else:
+    print("number not found :(")
+04 Test 4
+Input
+Expected output
+25
+if n == 1:
+    print("n is 1")
+elif n == 2:
+    print("n is 2")
+elif n == 3:
+    print("n is 3")
+elif n == 4:
+    print("n is 4")
+elif n == 5:
+    print("n is 5")
+elif n == 6:
+    print("n is 6")
+elif n == 7:
+    print("n is 7")
+elif n == 8:
+    print("n is 8")
+elif n == 9:
+    print("n is 9")
+elif n == 10:
+    print("n is 10")
+elif n == 11:
+    print("n is 11")
+elif n == 12:
+    print("n is 12")
+elif n == 13:
+    print("n is 13")
+elif n == 14:
+    print("n is 14")
+elif n == 15:
+    print("n is 15")
+elif n == 16:
+    print("n is 16")
+elif n == 17:
+    print("n is 17")
+elif n == 18:
+    print("n is 18")
+elif n == 19:
+    print("n is 19")
+elif n == 20:
+    print("n is 20")
+elif n == 21:
+    print("n is 21")
+elif n == 22:
+    print("n is 22")
+elif n == 23:
+    print("n is 23")
+elif n == 24:
+    print("n is 24")
+elif n == 25:
+    print("n is 25")
+else:
+    print("number n
+    
+    
+    
+coding:
+n = int(input())
+print("""
+if n == 1:
+    print("n is 1") """)
+for i in range(2,n+2):
+    print("""  
+elif n == i:
+    print("n is %d")""" %i)
+print("""
+else:
+    print("number not found:(")""")
+
