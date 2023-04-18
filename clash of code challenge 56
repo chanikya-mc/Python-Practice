@@ -1,0 +1,50 @@
+Simeon and the Frog plan to attend a concert of their favorite band. To sing along, they learn the songs by heart. They write a program that can display the next line of the song, so they can get ready to sing along at the top of their lovely voices!
+
+You are given the N lines of song lyrics. For each of the M lines they recognize during the concert, print the next line of the song lyrics. Make sure, you keep track of the order, so you know which part of the song was played already:
+
+For the first heard line, find the first occurrence in the song and output the next line. For each following heard line, find the first occurrence in the song after the previous heard line and output the next line. Beware, because you sing so loud, the next heard line is never the line that your program just wrote!
+Input
+Line 1: Number of lines in song N
+Next N lines: Song lyrics
+Next line: Number of heard lines M
+Next M lines: Heard lines
+Output
+M lines: The next line for each of the heard lines
+Constraints
+5 ≤ N < 20
+2 ≤ M < 10
+There is always at least one line in the song after the last heard line.
+Example
+Input
+5
+Alle meine Entchen
+Schwimmen auf dem See
+Schwimmen auf dem See
+Köpfchen in das Wasser
+Schwänzchen in die Höh’
+2
+Alle meine Entchen
+Köpfchen in das Wasser
+Output
+Schwimmen auf dem See
+Schwänzchen in die Höh’
+
+
+coding:
+l1=[]
+l2=[]
+n = int(input())
+for i in range(n):
+    line = input()
+    l1.append(line)
+m = int(input())
+for i in range(m):
+    line2= input()
+    l2.append(line2)
+for i in range(m):
+    x=l1.index(l2[i])
+    print(l1[x+1])
+
+
+
+
