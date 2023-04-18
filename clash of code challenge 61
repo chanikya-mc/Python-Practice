@@ -1,0 +1,13 @@
+t = input().split(' ')
+ct=0
+while len(t) >= 3:
+    ct+=1
+    a=int(t[0])
+    b=int(t[2])
+    s=t[1]
+    t=t[3:]
+    if s=='|':
+        t.insert(0,str(a|b))
+    elif s=='&':
+        t.insert(0,str(a&b))
+print(t[0],ct)
