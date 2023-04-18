@@ -1,0 +1,14 @@
+You must add one of [th, st, nd, rd] to a given integer so it turns into an ordinal number.
+Input
+An integer N
+Output
+Integer N concatenated with one of [th, st, nd, rd]
+Example
+Input
+1
+Output
+def ordinal(n):
+    suffix = {1:'st', 2:'nd', 3:'rd', 11:'th', 12:'th', 13:'th' }
+    return str(n)+(suffix.get(n%100) or suffix.get(n%10,'th'))
+
+print(ordinal(int(input())))
