@@ -1,0 +1,32 @@
+You receive a transmission from outer space, just 3 lines of text. The third line is an alien poem, and the first 2 lines contain instructions on how to format the poem. Your task is to separate this poem into lines and stanzas using the first 2 lines of text as the separators.
+Input
+Line 1: A string ls the separator between lines of the poem
+Line 2: A string ss the separator between stanzas of the poem
+Line 3: A string p the poem
+Output
+Output the poem separated into lines and stanzas (stanzas should have 1 blank row between them). See example below.
+Constraints
+Example
+Input
+*
+&
+Roses are red*Violets are blue&Here's a new stanza*Just for you
+Output
+Roses are red
+Violets are blue
+
+Here's a new stanza
+Just for you
+
+coding:
+s=input()
+
+for i in range(len(s)):
+    
+    if s[i]=="*":
+        s=s.replace("*","\n")
+    elif s[i]=="&":
+        s=s.replace("&","\n")
+        s=s+"\n"
+   
+print(s)
