@@ -1,0 +1,16 @@
+import math
+weight = int(input())
+f=int(input())
+i=int(input())
+x=703*weight/(f*12+i)**2
+
+y=math.ceil(x)
+print(float(y))
+if x<18.5:
+    print("Underweight")
+elif x<24.9 and x>= 18.5:
+    print("Normal")
+elif x>25.0 and x<29.9:
+    print("Overweight")
+elif x>=30:
+    print("Obese")
