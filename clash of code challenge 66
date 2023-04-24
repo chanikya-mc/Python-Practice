@@ -1,0 +1,36 @@
+Change each item in a list L to the number on the index that the number shows.
+
+Example:
+if L = 1, 3, 2, 0
+then the first number is 1 and the number at the index 1 is 3.
+After that, the next number is 3 and at the third index, the number is 0.
+If you continue doing that, you will get 3, 0, 2, 1
+Input
+Line 1: An integer A for the amount of numbers
+Line 2: Space separated integers L for the numbers
+Output
+The number at the index of the list of numbers
+Constraints
+A = 2^31
+All numbers in L are smaller that the length of L
+Example
+Input
+6
+3 5 2 5 3 4
+Output
+5 4 2 4 5 3
+
+coding:
+import sys
+import math
+
+
+l=[]
+w=[]
+a = int(input())
+for i in input().split():
+    ll = int(i)
+    l.append(ll)
+for i in range(len(l)):
+    w.append(l[l[i]])
+print(*w)
