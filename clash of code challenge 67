@@ -1,0 +1,35 @@
+For each of the N pairs of integers, write whether the Sum Of Squares is greater than, lower than, or equal to the Square Of the Sum.
+Input
+Line 1: The number N of pairs of integers.
+N following lines: Two integers a and b (separated by a blank space).
+Output
+For each of the N pairs of integers a and b, display on a line >, < or = depending on whether a²+b² is respectively greater than, lower than, or equal to (a+b)².
+Constraints
+0 < N < 100
+-1e9 < a,b < 1e9
+Example
+Input
+1
+2 3
+Output
+<
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n = int(input())
+for i in range(n):
+    a, b = [int(j) for j in input().split()]
+    if (a**2+b**2)>(a+b)**2:
+        print(">")
+    elif (a**2+b**2)<(a+b)**2:
+        print("<")
+    elif (a**2+b**2)==(a+b)**2:
+        print("=")
+
+
+
