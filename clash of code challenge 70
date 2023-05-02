@@ -1,0 +1,25 @@
+Print the product of all digits of a number n.
+Input
+Line 1: The integer n
+Output
+Line 1: The product of all digits
+Constraints
+Example
+Input
+1234
+Output
+24
+
+
+coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+n = int(input())
+x=1
+for i in str(n):
+    x=x*int(i)
+print(x)
