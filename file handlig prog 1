@@ -1,0 +1,6 @@
+x=open("ds2.txt","w")
+x.write("chanikya\n is agood character boy\n inreally love him")
+z=open("ds.txt","r")
+for i in z:
+    i=i.strip()
+    print(i)
