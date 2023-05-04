@@ -1,0 +1,6 @@
+x=open("d.txt","w")
+x.writelines(["dsghdf\n","dfdgfjdsfsa\n","shdhsjdsa\n"])
+z=open("d.txt","r")
+for i in z:
+    
+    print(i)
