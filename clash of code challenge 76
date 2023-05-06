@@ -1,0 +1,36 @@
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01 Test 1
+Input
+Expected output
+WHO AM I
+ 
+I AM WHO
+02 Test 2
+Input
+Expected output
+My.0name0is0Beedle0The0Bard
+0
+Bard The Beedle is name My.
+03 Test 3
+Input
+Expected output
+need.#in#friend#a#got#you#bet#I#indeed.#friend#a#got#you#need,#in#friend#a#got#You
+#
+You got a friend in need, you got a friend indeed. I bet you got a friend in need.
+04 Test 4
+Input
+Expected output
+demi-guy@ordinary@an@just@I'm@welcome@You're@okay@it's@okay,@it's@Hey,@sky@the@sun,@the@tides,@the@For@welcome''@''You're@except,@say@I@can@What@demi-god.@a@at@staring@you're@When@bod@the@hair,@The@lot@a@it's@know@I@in@it@Breathe@Maui@it's@me,@really@it's@Yes,@begin@let's@eyes,@your@Open@change@never@humans@that@see@to@nice@it's@Well,@adorable@It's@feel@you@how@know@even@don't@You@strange@it's@and@greatness,@with@face@to@face@You're@here@happening@what's@see@I@ok,@Ok,
+@
+Ok, ok, I see what's happening here 
+
+coding:
+
+input_string = input()
+input_string1=input()
+words = input_string.split()
+words = words[::-1]
+output_string = "".join(words)
+print(output_string.replace(input_string1," "))
+
+
