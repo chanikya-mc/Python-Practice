@@ -1,0 +1,7 @@
+d=dict()
+line=input("Enter a line of text:\n")
+words=line.split()
+print("Words are:\n",words)
+for i in words:
+    d[i]=d.get(i,0)+1
+print("couting the no if words in the line\n",d) 
