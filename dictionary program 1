@@ -1,0 +1,4 @@
+d=dict()
+d["age"]=20
+d["name"]="chanikya"
+print(d)
