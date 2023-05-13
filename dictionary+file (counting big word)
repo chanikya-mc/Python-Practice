@@ -1,0 +1,16 @@
+file=input("Enter file name\n")
+f=open(file)
+
+d=dict()
+for i in f:
+    words=i.split()
+    for j in words:
+        d[j]=d.get(j,0)+1
+
+bigd=None
+bigj=None
+for j,d in d.items():
+    if bigd is None or d>bigd:
+        bigj=j
+        bigd=d
+print(bigj,bigd)
