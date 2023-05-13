@@ -1,0 +1,5 @@
+d=dict()
+names=["chani","teja","liki","mani","vijay","chani"]
+for i in names:
+   d[i]=d.get(i,0)+1
+print(d)
