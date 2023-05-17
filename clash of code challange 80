@@ -1,0 +1,21 @@
+Find the smallest/lowest number which occurs an odd amount of times in a given string of positive integers.
+Input
+Line 1: A string s containing positive integers
+Output
+Line 1: The smallest number that appears an odd amount of times
+Constraints
+string contains only positive numbers
+Example
+Input
+2 3 5 4 2 2 4 3 5 2 4 4 2
+Output
+2
+coding:
+
+s=[int(i) for i in input().split()]
+s.sort()
+x=min(s)
+y=s.count(x)
+if y%2!=0:
+    print(x)
+
