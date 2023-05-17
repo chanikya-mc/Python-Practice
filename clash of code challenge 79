@@ -1,0 +1,35 @@
+Given n integers, find the minimum and maximum values that can be calculated by summing exactly n-1 of the n integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+example
+
+n = 5
+
+arr = [1, 2, 3, 4, 5]
+
+You will need the sum of 4 items.
+
+The minimum sum is 1+2+3+4=10 and the maximum sum is 2+3+4+5=14.
+
+The function will print 10 14
+Input
+Line 1: An integer N for the number of integers to sum.
+Next line: Space separated integers arr to sum.
+Output
+Line 1 : Space separated minimum sum and maximum sum.
+Constraints
+2 ≤ N ≤ 100
+
+arr: Space-separated integers -1000 < Each Integer < 100000000
+Example
+Input
+5
+1 2 3 4 5
+Output
+10 14
+
+
+coding:
+n = int(input())
+arr = [int(x) for x in input().split()]
+arr=sorted(arr)
+print(sum(arr[:-1]), sum(arr[1:]))
