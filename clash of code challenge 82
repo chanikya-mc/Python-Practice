@@ -1,0 +1,35 @@
+You begin with a number N. You can do one of two operations:
+
+Operation 1: Divide the number N by 2 (Note that if N is odd this would not result in an integer, and it would be impossible to reach 1)
+
+Operation 2: Subtract 1 from N
+
+However, you only can do operation 1, dividing N by 2, a maximum of A times.
+You want to reach the number 1 in the minimum operations. Print X, the lowest number of operations it takes.
+Input
+Line 1: An integer N, the starting number.
+Line 2: An integer A, the max times you can divide by 2.
+Output
+Output X, an integer.
+Constraints
+0 <= x < N <= 10^9+7
+Example
+Input
+5
+0
+Output
+4
+
+coding:
+n=int(input())
+a=int(input())
+c=0
+while n!=1:
+    if n%2==0 and a>0:
+        n//=2
+        c+=1
+        a-=1
+    else:
+        n-=1
+        c+=1
+print(c)
