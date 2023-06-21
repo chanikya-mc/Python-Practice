@@ -1,0 +1,25 @@
+You must output the period if every single 1 appears periodically in S or false if not.
+Here, just a single 1 exists in a single period if S is periodic.
+Input
+Line 1: An integer N for the length of S.
+Line 2: S consisting of 0 and 1 .
+Output
+If S is periodic, an integer number representing the period in which 1 appears in S
+If S is not periodic, output false
+Constraints
+0 ≤ N ≤ 500
+Example
+Input
+4
+1010
+Output
+2
+
+coding:
+n = int(input())
+l = input()
+x=l.count("1")
+if(n%x==0):
+    print(n//x)
+else:
+    print("false")
