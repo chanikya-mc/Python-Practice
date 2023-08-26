@@ -1,0 +1,34 @@
+The program:
+Swap each character at an even position with the next character if there is one. Positions start at zero.
+INPUT:
+A single string s.
+ 
+OUTPUT:
+The transformed string.
+ 
+CONSTRAINTS:
+s contains less than 8192 characters.
+ 
+EXAMPLE:
+Input
+ABCDEF
+Output
+BADCFE
+
+
+code:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+s = input()
+x=""
+for i in range(0,len(s)):
+ 
+    if i%2==0 and i<len(s)-1:
+        tep=s[i+1]
+        x=x+tep+s[i]
+       
+print(x)
