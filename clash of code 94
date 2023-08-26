@@ -1,0 +1,18 @@
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+
+f = int(input())
+d = int(input())
+r = int(input())
+
+fe=f-d*r
+if fe>0:
+
+    print(fe)
+elif fe==0:
+    print(0)
+else:
+    print("not enough fuel")
