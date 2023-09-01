@@ -1,0 +1,47 @@
+You are given a string composed by letters and special characters. You have to return a new string by changing the previous one following rules :
+- Each letter is replaced by a v if it's a vowel and by a c if it's a consonant. For the purpose of this clash, a, e, i, o, u and y are vowels and all the other letters are consonants.
+- If the original letter in string is in uppercase, change the letter to V or C instead of v or c.
+- The other characters stay the same.
+Input
+One string with letters and other characters
+Output
+The new string following the rules
+Constraints
+0 < length of string < 100
+Example
+Input
+Hello World !
+Output
+Cvccv Cvccc !
+ 
+  
+  
+  coding:
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+s1=""
+s2=""
+s= input()
+for i in s:
+
+
+    if i.isupper():
+        if i in ["A","E","I","O","U"]:
+            s1=s1+"V"
+        elif i.isalpha() and i not in  ["A","E","I","O","U"]:
+            s1+="C"
+        else:
+            s1=s1+i
+    else:
+        if i in ["a","e","i","o","u"]:
+            s1=s1+"v"
+        elif i.isalpha() and i not in  ["a","e","i","o","u"]:
+            s1+="c"
+        else:
+            s1=s1+i
+print(s1)
+
+
