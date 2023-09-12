@@ -1,0 +1,25 @@
+# Read input
+w, h = map(int, input().split())
+white_char, black_char = input().split()
+
+# Initialize the checkerboard pattern as an empty list
+checkerboard = []
+
+# Iterate through each row
+for i in range(h):
+    row = []
+    
+    # Iterate through each square in the row
+    for j in range(w):
+        # Determine whether the square should be white or black based on its position
+        if (i + j) % 2 == 0:
+            row.append(white_char)
+        else:
+            row.append(black_char)
+    
+    # Append the row to the checkerboard pattern
+    checkerboard.append(row)
+
+# Print the checkerboard pattern
+for row in checkerboard:
+    print(''.join(row))
