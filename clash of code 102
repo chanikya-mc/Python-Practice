@@ -1,0 +1,33 @@
+Extra characters are scattered in the sentences, among them: ' ? ! / , . : ) %
+Your task is to count how many such characters are in a sentence.
+
+! Space is not extra character !
+Input
+One sentence
+Output
+One number - quantity of extra characters
+Constraints
+3 <= lengh of sentence <= 100
+Example
+Input
+Where's your motivation?
+Output
+2
+
+codinng:
+
+
+import sys
+import math
+
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+t=0
+s = input()
+for i in s:
+    if i in ["'","?","!","/",",",".",":",")","%"]:
+        t=t+1
+print(t)
+
+
+
