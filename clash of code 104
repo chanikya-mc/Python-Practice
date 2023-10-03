@@ -1,0 +1,36 @@
+The program:
+Your program must output whether or not the word given contains the same letter twice in a row. Lowercase and uppercase versions of the same letter should be considered equal.
+
+INPUT:
+W a word.
+
+OUTPUT:
+true or false
+
+EXAMPLE:
+Input
+GrEeN
+Output
+true
+
+
+coding:
+
+def has_duplicate_letters(word):
+    # Convert the word to lowercase to make the comparison case-insensitive
+    word = word.lower()
+    
+    # Iterate through the characters of the word (except the last character)
+    for i in range(len(word) - 1):
+        if word[i] == word[i + 1]:
+            return True
+    return False
+
+# Input word
+word = input("Enter a word: ")
+
+# Check if the word has duplicate letters in a row
+result = has_duplicate_letters(word)
+
+# Output the result
+print(result)
