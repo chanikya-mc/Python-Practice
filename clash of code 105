@@ -1,0 +1,9 @@
+to print valid string
+
+code:
+s = input()
+t=""
+for i in s:
+    if i==" " or i.isalpha():
+        t=t+i
+print(t)
