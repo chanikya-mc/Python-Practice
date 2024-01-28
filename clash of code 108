@@ -1,0 +1,35 @@
+Goal
+Snakes are happy when they wave their tongue out, ASCII snakes are no exception.
+
+ASCII snakes have ASCII tongues, which appear as "-<" when facing right or ">-" when facing left.
+The tongue is always at the (relative) beginning of the snake.
+Snakes may have different shapes and lengths.
+
+
+You need to output the percentage of happy snakes.
+Input
+Line 1: An integer N for the number of snakes
+Next N lines: ASCII snakes
+Output
+Line 1 : The percentage of happy snakes, "%" symbol included
+Constraints
+1 ≤ N ≤ 100
+Example
+Input
+1
+...__/\_/\_/o-<
+Output
+100%
+
+code:
+n = int(input())
+s=0
+for i in range(n):
+
+    snake = input()
+    if "<" in snake or ">" in snake:
+        s=s+1
+if s>0:
+    print(str(int((s/n)*100))+"%")
+else:
+    print('0%')
